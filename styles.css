@@ -1,0 +1,171 @@
+@font-face {
+  font-family: icons;
+  src: url('icomoon/fonts/icomoon.ttf');
+}
+
+html, body {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/*whole page*/
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url('img/graybg.png');
+  background-size: 100%;
+  background-position: center;
+  font-family: 'Exo', sans-serif;
+}
+
+/*sidebar*/
+.accordion {
+  position: absolute;
+  left: 0;
+  width: 30vw;
+  height: 100vh;
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  display: block;
+  font-size: 1em;
+  -webkit-transition: height .3s;
+  transition: height .3s;
+  overflow: hidden;
+}
+.item:nth-of-type(1) {
+  background: #7d3e3e;
+}
+.item:nth-of-type(2) {
+  background: #C33546;
+}
+.item:nth-of-type(3) {
+  background: #C77B30;
+}
+.item:nth-of-type(4) {
+  background: #B52D2D;
+}
+.item:nth-of-type(5) {
+  background: #C74C30;
+}
+
+.item:nth-of-type(1) .inset {
+  top: 10vh;
+}
+.item:nth-of-type(2) .inset {
+  top: 20vh;
+}
+.item:nth-of-type(3) .inset {
+  top: 30vh;
+}
+.item:nth-of-type(4) .inset {
+  top: 40vh;
+}
+.item:nth-of-type(5) .inset {
+  top: 50vh;
+}
+
+.wood {
+  position: absolute;
+}
+.vector {
+  font-family: icons;
+  position: absolute;
+  margin: 1.1vh;
+  font-size: 2.2em;
+  right: 0;
+  color: #fff;
+  opacity: .6;
+}
+.vector:hover {
+  cursor: pointer;
+}
+.keyword {
+  position: absolute;
+  margin: 1vh;
+  font-size: 2em;
+  color: #fff;
+  opacity: .4;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.inset {
+  color: #fff;
+  position: fixed;
+  width: 25vw;
+  left: -200vw;
+  -webkit-transition: left .4s;
+  transition: left .4s;
+  line-height: 1.7em;
+}
+.inset a {
+  font-size: 1.05em;
+}
+
+/*main portion of page*/
+.headline {
+  z-index: 99;
+  position: absolute;
+  right: 5vw;
+}
+.headline h1 {
+  margin: 0;
+  text-align: right;
+  font-size: 11em;
+  opacity: .6;
+  color: #ccc;
+  background-image: url('img/wood0.png');
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: repeat;
+}
+.headline p {
+  color: #ccc;
+  font-size: 1.5em;
+}
+.curve {
+  background: #fff;
+  border-radius: 50%;
+  opacity: .02;
+  width: 2200px;
+  height: 1500px;
+  position: absolute;
+  top: 35vh;
+  left: 40vw;
+}
+
+/*icons in bottom right*/
+.links {
+  position: absolute;
+  right: 5vw;
+  bottom: 5vh;
+  color: #fff;
+  font-family: icons;
+  font-size: 1.5em;
+}
+.links span {
+  opacity: .6;
+  /* letter-spacing: 0; */
+}
+.links span:hover {
+  cursor: pointer;
+  opacity: .85;
+}

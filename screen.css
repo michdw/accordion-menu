@@ -1,0 +1,113 @@
+
+/*width*/
+@media screen and (max-width: 1100px) {
+  .headline h1 {
+    font-size: 9em;
+  }
+  .headline p {
+    font-size: 1.2em;
+    width: 50vw;
+    text-align: right;
+  }
+  .accordion {
+    width: 40vw;
+  }
+  .inset {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .headline h1 {
+    font-size: 6em;
+  }
+  .headline p {
+    width: 40vw;
+  }
+  .accordion {
+    width: 50vw;
+  }
+  .inset {
+    width: 45vw;
+    -webkit-transform: translateY(-2vh);
+    transform: translateY(-2vh);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .headline h1 {
+    font-size: 5em;
+    margin-top: 1em;
+    margin-right: -.2em;
+    vertical-align: text-top;
+    -webkit-transform: rotate(90deg) translate(1em, -1em);
+    transform: rotate(90deg) translate(1em, -1em);
+    background-image: url('img/wood0v.png');
+    opacity: 1;
+  }
+  .headline p {
+    display: none;
+  }
+  .links span {
+    display: block;
+    margin-top: 1em;
+  }
+  .accordion {
+    width: 65vw;
+  }
+  .inset {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .headline h1 {
+    font-size: 4.5em;
+  }
+  .accordion {
+    width: 70vw;
+  }
+  .inset {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headline h1 {
+    font-size: 3.5em;
+  }
+  .accordion {
+    width: 75vw;
+  }
+  .keyword {
+    font-size: 1.6em;
+  }
+  .inset {
+    width: 70vw;
+    -webkit-transform: translateY(-5vh);
+    transform: translateY(-5vh);
+  }
+}
+
+/*height*/
+@media screen and (max-height: 750px) {
+  .inset {
+    line-height: normal;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .inset {
+    font-size: .9em;
+  }
+  .inset a {
+    font-size: .95em;
+  }
+}
+
+/*width and height*/
+@media screen and (max-width: 700px) and (max-height: 500px) {
+  .links {
+    display: none;
+  }
+}
