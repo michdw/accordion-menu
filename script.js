@@ -3,10 +3,10 @@ $('.wood, .vector').hide();
 
 $(document).ready(function() {
 
-  $('.item').hover(
+  $('.segment').hover(
     function() {
       $(this).css('height', '60%');
-      $('.item').not($(this)).css('height', '10%');
+      $('.segment').not($(this)).css('height', '10%');
       $(this).find('.wood, .vector').fadeIn();
       $(this).find('.keyword').css('opacity', '.75');
       $(this).find('.inset').css('left', '2vw');
@@ -15,7 +15,7 @@ $(document).ready(function() {
       $(this).find('.wood, .vector').fadeOut(200);
       $(this).find('.keyword').css('opacity', '.4');
       $(this).find('.inset').css('left', '-200vw');
-      $('.item').css('height', '20%');
+      $('.segment').css('height', '20%');
     }); //end hover
 
     $('.vector').hover(
@@ -25,11 +25,11 @@ $(document).ready(function() {
         $(this).css('opacity', '.6');
       });
 
-    $('.item a').hover(
+    $('.segment a').hover(
       function() {
-      $(this).closest( $('.item') ).find( $('.vector') ).css('opacity', '.85');
+      $(this).closest( $('.segment') ).find( $('.vector') ).css('opacity', '.85');
     }, function() {
-      $(this).closest( $('.item') ).find( $('.vector') ).css('opacity', '.6');
+      $(this).closest( $('.segment') ).find( $('.vector') ).css('opacity', '.6');
     });
 
   }); //end ready

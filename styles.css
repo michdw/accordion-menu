@@ -39,7 +39,7 @@ a {
   height: 100vh;
 }
 
-.item {
+.segment {
   position: relative;
   width: 100%;
   height: 20%;
@@ -49,35 +49,35 @@ a {
   transition: height .3s;
   overflow: hidden;
 }
-.item:nth-of-type(1) {
+.segment:nth-of-type(1) {
   background: #7d3e3e;
 }
-.item:nth-of-type(2) {
+.segment:nth-of-type(2) {
   background: #C33546;
 }
-.item:nth-of-type(3) {
+.segment:nth-of-type(3) {
   background: #C77B30;
 }
-.item:nth-of-type(4) {
+.segment:nth-of-type(4) {
   background: #B52D2D;
 }
-.item:nth-of-type(5) {
+.segment:nth-of-type(5) {
   background: #C74C30;
 }
 
-.item:nth-of-type(1) .inset {
+.segment:nth-of-type(1) .inset {
   top: 10vh;
 }
-.item:nth-of-type(2) .inset {
+.segment:nth-of-type(2) .inset {
   top: 20vh;
 }
-.item:nth-of-type(3) .inset {
+.segment:nth-of-type(3) .inset {
   top: 30vh;
 }
-.item:nth-of-type(4) .inset {
+.segment:nth-of-type(4) .inset {
   top: 40vh;
 }
-.item:nth-of-type(5) .inset {
+.segment:nth-of-type(5) .inset {
   top: 50vh;
 }
 
